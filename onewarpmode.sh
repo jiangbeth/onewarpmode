@@ -5,8 +5,6 @@ linux_os=("Debian" "Ubuntu" "CentOS" "Fedora")
 linux_update=("apt update" "apt update" "yum -y update" "yum -y update")
 linux_install=("apt -y install" "apt -y install" "yum -y install" "yum -y install")
 n=0
-
-# Determine the Linux distribution#
 for i in "${linux_os[@]}"; do
 	if [ "$i" == "$(grep -i PRETTY_NAME /etc/os-release | cut -d \" -f2 | awk '{print $1}')" ]; then
 		break
