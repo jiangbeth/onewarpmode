@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # One-key proxy
 linux_os=("Debian" "Ubuntu" "CentOS" "Fedora")
 linux_update=("apt update" "apt update" "yum -y update" "yum -y update")
